@@ -16,7 +16,7 @@
 
 3. Copy the source code of the exam page to ```questions.html```.
 
-4. Run this script and the answer will be output to the console. For example:
+4. Run this script and the answer will be output to the console like this:
 
    ```
    [INFO] 数据库中的答案
