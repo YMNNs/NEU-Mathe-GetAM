@@ -1,0 +1,577 @@
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>在线考试</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="/easyui/themes/icon.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/easyui/jquery.min.js" type="text/javascript"></script>
+    <script src="/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/common.js" type="text/javascript"></script>
+    <script src="/js/onlineExam.js?1593311464295" type="text/javascript"></script>
+    <script type="text/javascript" src="/jmeditor/JMEditor.js"></script>
+	<script type="text/javascript" src="/mathjax2.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  </head>
+
+  <body ondragstart="return false;">
+  	<input type="hidden" id="src" value="/XDSys/TK/GS">
+  	<input type="hidden" id="id" value="">
+  	<input type="hidden" id="studentcode" value="">
+  	<input type="hidden" id="username" value="">
+  	<input type="hidden" id="examname" value="">
+  	<input type="hidden" id="time" value="60">
+	<input type="hidden" id="choiceanwser" value="0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null">
+	<input type="hidden" id="blank" value="">
+	<input type="hidden" id="blankcount" value="">
+	<input type="hidden" id="calculation" value="">
+	<input type="hidden" id="calculationcount" value="">
+
+  	<div class="easyui-layout" fit="true">
+
+	 	 <div data-options="region:'center',title:'试卷',split:true,noheader:true">
+
+				<div style="font-size:25px">一、选择题</div>
+
+				 <table id="at1" class="table table-bordered datatable">
+			 <tbody>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第1题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/5b9e03f04c734c0c9089a7fee7057c41/Averge/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='1' value='1' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5b9e03f04c734c0c9089a7fee7057c41/Averge/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae_1.png" /></td>
+	             <td align='center'><input type='radio' name='1' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5b9e03f04c734c0c9089a7fee7057c41/Averge/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='1'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5b9e03f04c734c0c9089a7fee7057c41/Averge/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae_4.png" /></td>
+	             <td align='center'><input type='radio' name='1'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5b9e03f04c734c0c9089a7fee7057c41/Averge/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae/5b9e03f04c734c0c9089a7fee7057c41_Averge_49b39819b7034288af527ca50a97dfae_2.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第2题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/287203a7c2b3481fb0d6302f68bb7a04/Averge/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='2' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/287203a7c2b3481fb0d6302f68bb7a04/Averge/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34_4.png" /></td>
+	             <td align='center'><input type='radio' name='2' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/287203a7c2b3481fb0d6302f68bb7a04/Averge/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='2'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/287203a7c2b3481fb0d6302f68bb7a04/Averge/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34_2.png" /></td>
+	             <td align='center'><input type='radio' name='2'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/287203a7c2b3481fb0d6302f68bb7a04/Averge/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34/287203a7c2b3481fb0d6302f68bb7a04_Averge_881239f5bfb24db3ab9f6a34a930ad34_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第3题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/87ce4931889f4fd487841f19380bce86/Averge/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='3' value='3' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/87ce4931889f4fd487841f19380bce86/Averge/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816_3.png" /></td>
+	             <td align='center'><input type='radio' name='3' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/87ce4931889f4fd487841f19380bce86/Averge/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='3'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/87ce4931889f4fd487841f19380bce86/Averge/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816_4.png" /></td>
+	             <td align='center'><input type='radio' name='3'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/87ce4931889f4fd487841f19380bce86/Averge/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816/87ce4931889f4fd487841f19380bce86_Averge_0f132421b33f42bdaac20865f96a5816_2.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第4题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/8a7be981ede84217882a421907040a50/Averge/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='4' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a7be981ede84217882a421907040a50/Averge/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09_2.png" /></td>
+	             <td align='center'><input type='radio' name='4' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a7be981ede84217882a421907040a50/Averge/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='4'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a7be981ede84217882a421907040a50/Averge/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09_4.png" /></td>
+	             <td align='center'><input type='radio' name='4'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a7be981ede84217882a421907040a50/Averge/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09/8a7be981ede84217882a421907040a50_Averge_9d172f513c4f43b1914218832fde8d09_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第5题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/9a7a981c69ed4e90abd5d4864b79c25f/Averge/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='5' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9a7a981c69ed4e90abd5d4864b79c25f/Averge/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76_4.png" /></td>
+	             <td align='center'><input type='radio' name='5' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9a7a981c69ed4e90abd5d4864b79c25f/Averge/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='5'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9a7a981c69ed4e90abd5d4864b79c25f/Averge/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76_2.png" /></td>
+	             <td align='center'><input type='radio' name='5'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9a7a981c69ed4e90abd5d4864b79c25f/Averge/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76/9a7a981c69ed4e90abd5d4864b79c25f_Averge_39f1801ff5e040e4b00fdd2ec6503e76_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第6题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/f5408157136a48cc96376a352f83a80e/Averge/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='6' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f5408157136a48cc96376a352f83a80e/Averge/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7_2.png" /></td>
+	             <td align='center'><input type='radio' name='6' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f5408157136a48cc96376a352f83a80e/Averge/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='6'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f5408157136a48cc96376a352f83a80e/Averge/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7_4.png" /></td>
+	             <td align='center'><input type='radio' name='6'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f5408157136a48cc96376a352f83a80e/Averge/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7/f5408157136a48cc96376a352f83a80e_Averge_a28b9a3a0b8648a6b5bff44f64f5adb7_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第7题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/50438561b24747748a3b6ea2afb5c03e/Averge/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='7' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/50438561b24747748a3b6ea2afb5c03e/Averge/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40_4.png" /></td>
+	             <td align='center'><input type='radio' name='7' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/50438561b24747748a3b6ea2afb5c03e/Averge/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='7'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/50438561b24747748a3b6ea2afb5c03e/Averge/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40_2.png" /></td>
+	             <td align='center'><input type='radio' name='7'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/50438561b24747748a3b6ea2afb5c03e/Averge/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40/50438561b24747748a3b6ea2afb5c03e_Averge_8ec304a448074857902221dd1fbbdf40_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第8题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/f36c97029e3342c5818b4677b8ad11f0/Averge/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='8' value='3' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f36c97029e3342c5818b4677b8ad11f0/Averge/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9_3.png" /></td>
+	             <td align='center'><input type='radio' name='8' value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f36c97029e3342c5818b4677b8ad11f0/Averge/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9_2.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='8'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f36c97029e3342c5818b4677b8ad11f0/Averge/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9_1.png" /></td>
+	             <td align='center'><input type='radio' name='8'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f36c97029e3342c5818b4677b8ad11f0/Averge/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9/f36c97029e3342c5818b4677b8ad11f0_Averge_5c4bb9e34ac54d61a8e74a72e5ecfcf9_4.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第9题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/8e7dee74f7144e499cf6afa789374f92/Averge/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='9' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8e7dee74f7144e499cf6afa789374f92/Averge/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b_2.png" /></td>
+	             <td align='center'><input type='radio' name='9' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8e7dee74f7144e499cf6afa789374f92/Averge/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='9'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8e7dee74f7144e499cf6afa789374f92/Averge/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b_1.png" /></td>
+	             <td align='center'><input type='radio' name='9'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8e7dee74f7144e499cf6afa789374f92/Averge/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b/8e7dee74f7144e499cf6afa789374f92_Averge_98ab761283354e218b7871703456680b_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第10题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/b0db621764404948ba7a9b7a05f29600/Averge/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='10' value='3' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b0db621764404948ba7a9b7a05f29600/Averge/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290_3.png" /></td>
+	             <td align='center'><input type='radio' name='10' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b0db621764404948ba7a9b7a05f29600/Averge/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='10'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b0db621764404948ba7a9b7a05f29600/Averge/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290_2.png" /></td>
+	             <td align='center'><input type='radio' name='10'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b0db621764404948ba7a9b7a05f29600/Averge/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290/b0db621764404948ba7a9b7a05f29600_Averge_4e92e5ef79f2483c8be73db591ace290_4.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第11题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/01436ff2470f415abb284ccf9305edb0/Averge/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='11' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/01436ff2470f415abb284ccf9305edb0/Averge/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d_2.png" /></td>
+	             <td align='center'><input type='radio' name='11' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/01436ff2470f415abb284ccf9305edb0/Averge/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='11'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/01436ff2470f415abb284ccf9305edb0/Averge/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d_4.png" /></td>
+	             <td align='center'><input type='radio' name='11'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/01436ff2470f415abb284ccf9305edb0/Averge/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d/01436ff2470f415abb284ccf9305edb0_Averge_de1679b7f1774efcbc893b05864e270d_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第12题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/af975846a3534a8c8cdd6079cac48b3a/Averge/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='12' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/af975846a3534a8c8cdd6079cac48b3a/Averge/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b_2.png" /></td>
+	             <td align='center'><input type='radio' name='12' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/af975846a3534a8c8cdd6079cac48b3a/Averge/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='12'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/af975846a3534a8c8cdd6079cac48b3a/Averge/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b_1.png" /></td>
+	             <td align='center'><input type='radio' name='12'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/af975846a3534a8c8cdd6079cac48b3a/Averge/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b/af975846a3534a8c8cdd6079cac48b3a_Averge_cdf1c79bbf5b425280765b37d5c36a7b_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第13题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/5a34604c39504e12aec5f73460e54e13/Averge/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='13' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5a34604c39504e12aec5f73460e54e13/Averge/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d_4.png" /></td>
+	             <td align='center'><input type='radio' name='13' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5a34604c39504e12aec5f73460e54e13/Averge/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='13'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5a34604c39504e12aec5f73460e54e13/Averge/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d_2.png" /></td>
+	             <td align='center'><input type='radio' name='13'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/5a34604c39504e12aec5f73460e54e13/Averge/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d/5a34604c39504e12aec5f73460e54e13_Averge_5af417940776427c9d725fb56de0636d_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第14题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/e4c4c25e4a0f4dd79f6e958f861b0c27/Averge/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='14' value='1' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/e4c4c25e4a0f4dd79f6e958f861b0c27/Averge/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1_1.png" /></td>
+	             <td align='center'><input type='radio' name='14' value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/e4c4c25e4a0f4dd79f6e958f861b0c27/Averge/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1_2.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='14'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/e4c4c25e4a0f4dd79f6e958f861b0c27/Averge/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1_3.png" /></td>
+	             <td align='center'><input type='radio' name='14'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/e4c4c25e4a0f4dd79f6e958f861b0c27/Averge/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1/e4c4c25e4a0f4dd79f6e958f861b0c27_Averge_91127d7c41104ff68dc6897e880d05f1_4.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第15题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/f176cc919d534d9b9561ba6316225e26/Averge/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='15' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f176cc919d534d9b9561ba6316225e26/Averge/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28_2.png" /></td>
+	             <td align='center'><input type='radio' name='15' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f176cc919d534d9b9561ba6316225e26/Averge/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='15'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f176cc919d534d9b9561ba6316225e26/Averge/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28_4.png" /></td>
+	             <td align='center'><input type='radio' name='15'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/f176cc919d534d9b9561ba6316225e26/Averge/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28/f176cc919d534d9b9561ba6316225e26_Averge_afad222ba9e742429abd03e52211ae28_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第16题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/4ff775eee73342fb95def9f02fdf4b36/Averge/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='16' value='3' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/4ff775eee73342fb95def9f02fdf4b36/Averge/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e_3.png" /></td>
+	             <td align='center'><input type='radio' name='16' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/4ff775eee73342fb95def9f02fdf4b36/Averge/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='16'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/4ff775eee73342fb95def9f02fdf4b36/Averge/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e_4.png" /></td>
+	             <td align='center'><input type='radio' name='16'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/4ff775eee73342fb95def9f02fdf4b36/Averge/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e/4ff775eee73342fb95def9f02fdf4b36_Averge_eb3a89902b0447718a152d103042f84e_2.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第17题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/782a501b0846443190e9bdc3e0883659/Averge/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='17' value='3' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/782a501b0846443190e9bdc3e0883659/Averge/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458_3.png" /></td>
+	             <td align='center'><input type='radio' name='17' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/782a501b0846443190e9bdc3e0883659/Averge/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='17'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/782a501b0846443190e9bdc3e0883659/Averge/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458_2.png" /></td>
+	             <td align='center'><input type='radio' name='17'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/782a501b0846443190e9bdc3e0883659/Averge/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458/782a501b0846443190e9bdc3e0883659_Averge_bc9ee3ef2e514bf1b43b69b13daf0458_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第18题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/88704f7a59204164937483ad87942219/Averge/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='18' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/88704f7a59204164937483ad87942219/Averge/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6_2.png" /></td>
+	             <td align='center'><input type='radio' name='18' value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/88704f7a59204164937483ad87942219/Averge/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6_1.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='18'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/88704f7a59204164937483ad87942219/Averge/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6_3.png" /></td>
+	             <td align='center'><input type='radio' name='18'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/88704f7a59204164937483ad87942219/Averge/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6/88704f7a59204164937483ad87942219_Averge_ccf7e1ff2e7c4e73bb090fb943dd92b6_4.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第19题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/edf9dba72ca84c06bb07690248331ce1/Averge/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='19' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/edf9dba72ca84c06bb07690248331ce1/Averge/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17_4.png" /></td>
+	             <td align='center'><input type='radio' name='19' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/edf9dba72ca84c06bb07690248331ce1/Averge/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='19'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/edf9dba72ca84c06bb07690248331ce1/Averge/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17_2.png" /></td>
+	             <td align='center'><input type='radio' name='19'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/edf9dba72ca84c06bb07690248331ce1/Averge/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17/edf9dba72ca84c06bb07690248331ce1_Averge_d09bcd44ad6a41d5a276df29589ebf17_1.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第20题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/1d6529e4e8ad40c0acb9399538501e89/Averge/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='20' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/1d6529e4e8ad40c0acb9399538501e89/Averge/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689_2.png" /></td>
+	             <td align='center'><input type='radio' name='20' value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/1d6529e4e8ad40c0acb9399538501e89/Averge/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689_3.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='20'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/1d6529e4e8ad40c0acb9399538501e89/Averge/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689_1.png" /></td>
+	             <td align='center'><input type='radio' name='20'  value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/1d6529e4e8ad40c0acb9399538501e89/Averge/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689/1d6529e4e8ad40c0acb9399538501e89_Averge_d639d4a85dc8422891560f9e038d2689_4.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第21题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/8a374fa8d5534969a99da08d7d029c4b/Averge/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='21' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a374fa8d5534969a99da08d7d029c4b/Averge/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d_2.png" /></td>
+	             <td align='center'><input type='radio' name='21' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a374fa8d5534969a99da08d7d029c4b/Averge/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='21'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a374fa8d5534969a99da08d7d029c4b/Averge/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d_1.png" /></td>
+	             <td align='center'><input type='radio' name='21'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/8a374fa8d5534969a99da08d7d029c4b/Averge/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d/8a374fa8d5534969a99da08d7d029c4b_Averge_b0c8c9e90be84f80aa7f03aae9e6c07d_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第22题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/b90112eb40b04a21aceb7acbde027cdc/Averge/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='22' value='1' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b90112eb40b04a21aceb7acbde027cdc/Averge/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941_1.png" /></td>
+	             <td align='center'><input type='radio' name='22' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b90112eb40b04a21aceb7acbde027cdc/Averge/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='22'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b90112eb40b04a21aceb7acbde027cdc/Averge/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941_2.png" /></td>
+	             <td align='center'><input type='radio' name='22'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/b90112eb40b04a21aceb7acbde027cdc/Averge/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941/b90112eb40b04a21aceb7acbde027cdc_Averge_3b795ba525144eaaa43978bae49cf941_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第23题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/a1cf45c6d45d4f53bbaff71feece81f5/Averge/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='23' value='2' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/a1cf45c6d45d4f53bbaff71feece81f5/Averge/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505_2.png" /></td>
+	             <td align='center'><input type='radio' name='23' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/a1cf45c6d45d4f53bbaff71feece81f5/Averge/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='23'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/a1cf45c6d45d4f53bbaff71feece81f5/Averge/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505_1.png" /></td>
+	             <td align='center'><input type='radio' name='23'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/a1cf45c6d45d4f53bbaff71feece81f5/Averge/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505/a1cf45c6d45d4f53bbaff71feece81f5_Averge_7eacdf276398454aa117610391d62505_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第24题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/9c7eaf7360cf46beb9c61a5cb8741031/Averge/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='24' value='4' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9c7eaf7360cf46beb9c61a5cb8741031/Averge/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658_4.png" /></td>
+	             <td align='center'><input type='radio' name='24' value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9c7eaf7360cf46beb9c61a5cb8741031/Averge/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658_2.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='24'  value='1'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9c7eaf7360cf46beb9c61a5cb8741031/Averge/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658_1.png" /></td>
+	             <td align='center'><input type='radio' name='24'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/9c7eaf7360cf46beb9c61a5cb8741031/Averge/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658/9c7eaf7360cf46beb9c61a5cb8741031_Averge_ae77b2db88fd44c3bedec142b78db658_3.png" /></td>
+	            </tr>
+
+				<tr>
+	              <td align='center' font-size:12px colspan='4'><label> 第25题</label></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><label>题目</label></td>
+	             <td align='center' font-size:12px colspan='3'><img src="/XDSys/TK/GS/00133143597243c48f74e6d2ddbb0e8a/Averge/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426_0.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='25' value='1' /></td>
+	             <td align='center'><img src="/XDSys/TK/GS/00133143597243c48f74e6d2ddbb0e8a/Averge/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426_1.png" /></td>
+	             <td align='center'><input type='radio' name='25' value='4'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/00133143597243c48f74e6d2ddbb0e8a/Averge/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426_4.png" /></td>
+	            </tr>
+	            <tr>
+	             <td align='center'><input type='radio' name='25'  value='3'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/00133143597243c48f74e6d2ddbb0e8a/Averge/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426_3.png" /></td>
+	             <td align='center'><input type='radio' name='25'  value='2'/></td>
+	             <td align='center'><img src="/XDSys/TK/GS/00133143597243c48f74e6d2ddbb0e8a/Averge/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426/00133143597243c48f74e6d2ddbb0e8a_Averge_14bfe888aefa42e7a80dff98581b7426_2.png" /></td>
+	            </tr>
+
+			</tbody>
+		</table>
+
+
+
+
+
+		</div>
+		<div data-options="region:'east',title:'操作',split:true,noheader:true" style="width:180px;">
+
+		<div> </div>
+		<div>  <OBJECT Name="TFace1" ID="TFace1" CLASSID="CLSID:{E986FD89-19E0-40EE-AD5C-2878CCE12294}"  width = 200 height = 150> </OBJECT></div>
+
+		<div> </div>
+		<div style="font-size:14px;">考试剩余时间：</div>
+		<div class="time-item" style="font-size:14px;">
+            <strong id="hour_show">0时</strong>
+            <strong id="minute_show">0分</strong>
+            <strong id="second_show">0秒</strong>
+        </div>
+
+		<p><span id="confirm" style="font-size:14px;"></span>&nbsp;&nbsp;<a href="#" class="easyui-linkbutton" onclick="confirmexam();">提交试卷</a></p>
+		<div style="font-size:14px;">
+
+		</div>
+		</div>
+	 </div>
+
+  </body>
+</html>
