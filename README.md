@@ -1,6 +1,6 @@
-# NEU-Mathe-GetAM
+# neu-mathe-am-testpage-parser
 
- Advanced Mathematics Exam Answer Getter
+ An advanced mathematics exam answer getter for mathe.neu.edu.cn
 
 
 
@@ -14,7 +14,7 @@
    conn = connect(host="localhost", user="[USER]", passwd="[PASSWORD]", database="[DATABASE]")
    ```
 
-3. Copy the source code of the exam page to ```questions.html```.
+3. Copy the source code of the exam page (by F12) to ```questions.html```.
 
 4. Run this script and the answer will be output to the console like this:
 
