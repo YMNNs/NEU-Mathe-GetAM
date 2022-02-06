@@ -6,7 +6,7 @@
 
 ## Usage
 
-1. Import .SQL file into your MySql database.
+1. Import .SQL file into your MySQL database.
 
 2. Modify the database configuration in the code.
 
